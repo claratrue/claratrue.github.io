@@ -64,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
 
 <meta property="og:title" content="Clara Thomas">
 <meta property="og:description" content="M.S. student studying urban bird communities through passive acoustic monitoring.">
-<meta property="og:image" content="images/mono.jpeg">
+<meta property="og:image" content="https://claratthomas.com/images/mono.jpeg">
 <meta property="og:site_name" content="Clara Thomas">
 </head>
 
@@ -205,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/claratthomas\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Clara Thomas</title>
+<link>https://claratthomas.com/fieldnotes/</link>
+<atom:link href="https://claratthomas.com/fieldnotes/index.xml" rel="self" type="application/rss+xml"/>
+<description>Notes from the recorders and the desk.</description>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Fri, 28 Aug 2026 19:33:56 GMT</lastBuildDate>
+</channel>
+</rss>
