@@ -1,0 +1,197 @@
+---
+pagetitle: "Clara Thomas — CV"
+description: "Curriculum vitae — Clara Thomas, M.S. student in Biology, University of the Pacific."
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+:::::::::: {.masthead .cv-masthead}
+# Curriculum Vitae
+## Education
+
+::: cv-item
+[University of the Pacific]{.org} [M.S. Student, Biology]{.role} [2025 —
+present]{.when}
+:::
+
+::: cv-item
+[Cornell University, College of Arts & Sciences]{.org} [B.A.,
+Environmental Biology and Applied Ecology]{.role} [2018 — 2022]{.when}
+:::
+
+## Research & Professional Experience
+
+::: cv-item
+[University of the Pacific, Stockton, CA]{.org} [M.S. student, Odom
+Lab]{.role} [2025 — 2027]{.when}
+
+**Passive acoustic monitoring of urban bird communities.** I am using
+automated acoustic recorders (AudioMoths) and machine learning-based
+species identification (BirdNET) to assess patterns in bird species
+richness and occupancy in relation to vegetation structure and urban
+land use to inform citywide greening initiatives.
+:::
+
+\
+
+::: cv-item
+[California State University, Los Angeles]{.org} [Research Assistant,
+Wood Lab of Avian and Urban Ecology]{.role} [May — December 2024]{.when}
+
+**Urban food web dynamics.** Conducted point-count bird surveys
+evaluating how the planting of 200 oak trees on campus contributed to
+urban biodiversity. Examined the capacity of native and non-native oaks
+to support urban food webs, including insects and birds.
+:::
+
+\
+
+::: cv-item
+[U.S. Geological Survey, Southwest Biological Science Center, Moab, UT]{.org}
+[Biological Science Technician]{.role} [February — December
+2023]{.when}
+
+**Terrestrial dryland ecology.** Conducted extensive fieldwork across a
+suite of projects spanning adaptive management, dust and aeolian
+processes, rangeland management, sediment transport, dryland inventory
+and monitoring, biological soil crusts, wildfire, and nonnative species.
+:::
+
+\
+
+::: cv-item
+[Cornell Lab of Ornithology & Western Sydney University]{.org} [Lyrebird
+Lab — NSF Research Experiences for Undergraduates (REU)]{.role} [June —
+August 2022]{.when}
+
+**Superb Lyrebird behavioral ecology.** Studied vocal behavior and song
+dialects across the species' population range in eastern Australia.
+Deployed SWIFT autonomous audio recorders and motion-triggered cameras
+near display mounds and managed the resulting data.
+:::
+
+\
+
+::: cv-item
+[Cornell University Plant Pathology Herbarium, Ithaca, NY]{.org} [Museum Curatorial
+Assistant]{.role} [November 2018 — November 2019]{.when}
+
+**Fungal biology.** Packaged and labelled fungal specimens for museum
+research.
+:::
+::::::::::
+
+## Teaching
+
+:::: cv-list
+::: cv-item
+[University of the Pacific, Department of Biological Sciences]{.org}
+[Teaching Assistant — General Biology 51 and 61]{.role} [2025 —
+present]{.when}
+:::
+::::
+
+## Publications
+
+:::: cv-list
+::: cv-item
+[Book review]{.org}
+
+Thomas, C. (2023). Review of *The Compact Australian Bird Guide*, by J.
+Davies, P. Menkhorst, D. Rogers, R. Clarke, P. Marsack, and K. Franklin.
+CSIRO Publishing, 2022, 264 pp. *Emu — Austral Ornithology*, 123(2),
+182–183. <https://doi.org/10.1080/01584197.2023.2171437>
+:::
+::::
+
+## Conference Presentations
+
+::::: cv-list
+::: cv-item
+[What can bird vocal activity tell us about urban green space? A
+passive acoustic study in California's Central Valley]{.org} [American
+Ornithological Society Conference, Amherst, MA — poster]{.role} [August
+2026]{.when}
+:::
+
+::: cv-item
+[Using automated acoustic monitoring to evaluate avian biodiversity in
+a structurally diverse urban landscape]{.org} [Animal Behavior Society
+Conference, Baltimore, MD — poster]{.role} [July 2025]{.when}
+
+[Central Valley Birding Symposium, Stockton, CA — talk]{.role} [November
+2025]{.when}
+:::
+:::::
+
+## Fellowships & Grants
+
+:::::: cv-list
+::: cv-item
+[Central Valley Bird Club Research Grant Award]{.org} [Two months
+support]{.role} [May 2026]{.when}
+:::
+
+::: cv-item
+[Hunter-Nahhas Fellowship Award]{.org} [University of the Pacific,
+Department of Biological Sciences — three months support]{.role}
+[2025]{.when}
+:::
+
+::: cv-item
+[Sempra Energy Scholarship Program]{.org} [Cornell University]{.role}
+[2018 — 2022]{.when}
+:::
+::::::
+
+## Service & Community Engagement
+
+:::::::: cv-list
+::: cv-item
+[Morro Bay Bird Festival — San Luis Obispo, CA]{.org} [Trip leader —
+*Shorebirds of the Morro Bay Marina* and *Birding Hot Spots for
+Beginners*]{.role} [January 2025]{.when}
+:::
+
+::: cv-item
+[Occidental College, Moore Lab of Zoology — Los Angeles, CA]{.org} [Bird
+specimen preparation volunteer — prepared bird skins for long-term
+museum storage]{.role} [March — December 2024]{.when}
+:::
+
+::: cv-item
+[La Verne Bird Banding Station]{.org} [Bird banding research volunteer —
+captured birds with mist nets; identified, aged, measured, sexed, and
+banded birds]{.role} [July — December 2024]{.when}
+:::
+
+::: cv-item
+[Los Angeles Audubon]{.org} [California Least Tern monitoring volunteer
+— community science monitoring during nesting season]{.role} [June —
+August 2024]{.when}
+
+[Bird walk guide — led birding outings for LA Audubon and community
+members]{.role} [September — October 2024]{.when}
+:::
+
+::: cv-item
+[Cornell University Museum of Vertebrates - Ithaca, NY]{.org} [Bird specimen
+preparation volunteer — prepared specimens for long-term museum
+storage]{.role} [January — November 2022]{.when}
+:::
+::::::::
+
+## Skills
+
+:::: cv-list
+::: cv-item
+[Software]{.org}
+
+R, Python, ArcGIS, Survey123, Microsoft Office Suite.
+:::
+::::
+
+::: cv-foot
+Last updated August 2026 · [Download as PDF](cv.pdf)
+:::

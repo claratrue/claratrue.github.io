@@ -1,0 +1,618 @@
+/*-- scss:defaults --*/
+
+// ── Palette ───────────────────────────────────────────────────────────
+// Near-monochrome. One muted accent, used only for links.
+$paper:      #fcfbf8;   // warm off-white ground
+$ink:        #1c1b19;   // body text
+$ink-soft:   #6a6862;   // secondary text, dates, affiliations
+$rule:       #e2dfd7;   // hairlines
+$accent:     #5c6b52;   // muted moss — links only
+$band:       #c4d6a0;   // navbar band
+$band-rule:  #809265;   // hairline under the band
+
+$body-bg:    $paper;
+$body-color: $ink;
+$link-color: $accent;
+
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$font-family-serif:      "Newsreader", Georgia, "Times New Roman", serif;
+
+$font-size-root: 17px;
+$line-height-base: 1.65;
+
+$toc-color: $ink-soft;
+$grid-body-width: 700px;
+
+
+/*-- scss:rules --*/
+
+body {
+  font-family: #{$font-family-serif};
+  font-size: 1.06rem;
+  color: $ink;
+  background: $paper;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+// Quarto page furniture we don't want
+.nav-footer,
+#quarto-margin-sidebar,
+.quarto-title-banner { display: none !important; }
+
+// ── Navbar ────────────────────────────────────────────────────────────
+// A row of small caps links in the top right. No bar, no shadow, no brand.
+#quarto-header,
+.navbar {
+  background: $band !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  min-height: 0;
+  padding: 0;
+  border-bottom: 1px solid $band-rule !important;
+}
+
+.navbar > .container-fluid,
+.navbar > .container,
+.navbar-container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 15px 26px 15px;
+  justify-content: space-between;   // was: flex-end
+  align-items: baseline;
+}
+
+.navbar-brand-container {
+  margin: 0 auto 0 0 !important;
+  order: 0 !important;
+}
+
+.navbar-brand {
+  font-family: #{$font-family-serif};
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #000 !important;
+  text-decoration: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.navbar-brand:hover { color: #000 !important; }
+
+.navbar-logo { display: none !important; }
+
+.navbar-nav {
+  flex-direction: row;
+  gap: 22px;
+  align-items: baseline;
+}
+
+.navbar-nav .nav-item { margin: 0; }
+
+.navbar .nav-link {
+  font-family: #{$font-family-sans-serif};
+  font-size: 0.715rem;
+  font-weight: 500;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+  color: $ink-soft !important;
+  padding: 0 !important;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.navbar .nav-link:hover {
+  color: $ink !important;
+  border-bottom-color: $rule;
+}
+
+// Current page
+.navbar .nav-link.active,
+.navbar .nav-link[aria-current="page"] {
+  color: $accent !important;
+  border-bottom-color: $accent;
+}
+
+// Collapsed (small screens)
+.navbar-toggler {
+  border: 0;
+  box-shadow: none !important;
+  padding: 0;
+  margin-left: auto;
+}
+
+.navbar-toggler-icon {
+  width: 1.3em;
+  height: 1.3em;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%236a6862' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.2' d='M4 8h22M4 15h22M4 22h22'/%3e%3c/svg%3e") !important;
+}
+
+@media (max-width: 575.98px) {
+  .navbar > .container-fluid { padding: 18px 22px 0; }
+
+  .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 0 4px;
+    align-items: flex-start;
+  }
+}
+
+#quarto-content > * { padding-top: 0; }
+
+// Neutralise Quarto's multi-column page grid so the single column truly centres
+#quarto-content,
+.page-columns {
+  display: block !important;
+}
+
+main.content {
+  max-width: 760px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 26px 60px;
+  grid-column: unset !important;
+}
+
+// ── Masthead ──────────────────────────────────────────────────────────
+.masthead {
+  padding: 4px 0 0;
+}
+
+// Heading for interior pages (Research, About, Fieldnotes)
+.page-head {
+  padding: 4px 0 24px;
+}
+
+.page-head h1 {
+  font-family: #{$font-family-serif};
+  font-size: 1.85rem;
+  font-weight: 500;
+  letter-spacing: -0.018em;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+.page-head .sub {
+  font-size: 1.03rem;
+  color: mix($ink, $ink-soft, 55%);
+  max-width: 52ch;
+  margin: 0;
+}
+
+// First section heading on an interior page shouldn't double up on rules
+.page-head + h2 { margin-top: 30px; }
+
+.masthead h1 {
+  font-family: #{$font-family-serif};
+  font-size: 2.35rem;
+  font-weight: 500;
+  letter-spacing: -0.021em;
+  line-height: 1.15;
+  margin: 0 0 22px;
+}
+
+// Stacked affiliation lines 
+.affil {
+  font-family: #{$font-family-sans-serif};
+  font-size: 0.845rem;
+  line-height: 1.72;
+  color: $ink-soft;
+  margin: 0 0 34px;
+}
+
+.affil div { margin: 0; }
+.affil .sep { height: 11px; }
+
+// ── Body copy ─────────────────────────────────────────────────────────
+main.content p {
+  margin: 0 0 1.15em;
+}
+
+.lede {
+  font-size: 1.12rem;
+  line-height: 1.6;
+  margin-bottom: 1.3em !important;
+}
+
+// ── Section headings ──────────────────────────────────────────────────
+main.content h2 {
+  font-family: #{$font-family-sans-serif};
+  font-size: 0.705rem;
+  font-weight: 600;
+  letter-spacing: 0.135em;
+  text-transform: uppercase;
+  color: $ink-soft;
+  margin: 62px 0 20px;
+  padding-top: 26px;
+  border-top: 1px solid $rule;
+  border-bottom: 0;
+}
+
+main.content h3 {
+  font-family: #{$font-family-serif};
+  font-size: 1.075rem;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+// ── Links ─────────────────────────────────────────────────────────────
+main.content a {
+  color: $accent;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 2.5px;
+  text-decoration-color: rgba(92, 107, 82, 0.38);
+  transition: text-decoration-color 0.15s;
+}
+
+main.content a:hover {
+  text-decoration-color: $accent;
+}
+
+// ── Project list ──────────────────────────────────────────────────────
+.projects ul,
+ul.projects {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.projects li {
+  list-style: none;
+  padding: 0 0 14px;
+  margin: 0 0 14px;
+  border-bottom: 1px solid $rule;
+}
+
+.projects li::marker { content: none; }
+
+.projects li:last-child {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.projects h3 {
+  font-size: 1.03rem;
+  font-weight: 600;
+}
+
+.projects h3 a {
+  text-decoration: none;
+  color: $ink;
+}
+
+.projects h3 a:hover {
+  color: $accent;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  text-underline-offset: 2.5px;
+}
+
+.projects .note {
+  display: block;
+  font-size: 0.95rem;
+  color: $ink-soft;
+  line-height: 1.5;
+  margin-top: 3px;
+}
+
+// ── Publications ──────────────────────────────────────────────────────
+.pubs { margin: 0; }
+
+.pubs .pub {
+  margin: 0 0 20px;
+}
+
+.pubs .pub:last-child { margin-bottom: 0; }
+
+.pubs .title {
+  display: block;
+  font-weight: 600;
+  line-height: 1.42;
+  margin-bottom: 2px;
+}
+
+.pubs .cite {
+  display: block;
+  font-size: 0.95rem;
+  color: $ink-soft;
+  line-height: 1.5;
+}
+
+.pubs .cite em { font-style: italic; }
+
+// ── Contact / colophon ────────────────────────────────────────────────
+.contact {
+  font-size: 0.98rem;
+}
+
+.contact .links {
+  font-family: #{$font-family-sans-serif};
+  font-size: 0.845rem;
+  color: $ink-soft;
+  margin-top: 10px;
+}
+
+.contact .links a { margin-right: 4px; }
+
+// ── CV page ───────────────────────────────────────────────────────────
+.cv-nav {
+  font-family: #{$font-family-sans-serif};
+  font-size: 0.8rem;
+  padding-top: 40px;
+  margin-bottom: -46px;
+}
+
+.cv-nav a {
+  color: $ink-soft !important;
+  text-decoration: none !important;
+}
+
+.cv-nav a:hover { color: $accent !important; }
+
+.cv-masthead h1 {
+  font-size: 1.85rem;
+  margin-bottom: 18px;
+}
+
+.cv-list { margin: 0; }
+
+.cv-item {
+  margin: 0 0 26px;
+  padding-left: 0;
+}
+
+.cv-item:last-child { margin-bottom: 0; }
+
+// Organisation / primary line
+.cv-item .org {
+  display: block;
+  font-weight: 600;
+  font-size: 1.035rem;
+  line-height: 1.4;
+  margin-bottom: 2px;
+}
+
+// Role / secondary line
+.cv-item .role {
+  display: block;
+  font-style: italic;
+  font-size: 0.965rem;
+  color: mix($ink, $ink-soft, 45%);
+  line-height: 1.45;
+}
+
+// Dates — small caps sans, sits quietly under the role
+.cv-item .when {
+  display: block;
+  font-family: #{$font-family-sans-serif};
+  font-style: normal;
+  font-size: 0.76rem;
+  letter-spacing: 0.045em;
+  color: $ink-soft;
+  margin-top: 3px;
+}
+
+// Description paragraph inside an entry
+.cv-item p {
+  font-size: 0.965rem;
+  line-height: 1.58;
+  margin: 8px 0 0;
+  color: mix($ink, $ink-soft, 72%);
+}
+
+.cv-item p strong {
+  font-weight: 600;
+  color: $ink;
+}
+
+.cv-foot {
+  font-family: #{$font-family-sans-serif};
+  font-size: 0.78rem;
+  color: $ink-soft;
+  margin-top: 62px;
+  padding-top: 22px;
+  border-top: 1px solid $rule;
+}
+
+// ── Fieldnotes listing ────────────────────────────────────────────────
+.quarto-listing { margin-top: 8px; }
+
+// Stack date over title instead of Quarto's date-in-a-side-column default
+.quarto-listing .list { width: 100%; }
+
+.quarto-post {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  max-width: none !important;
+  padding: 20px 0;
+  border-bottom: 1px solid $rule;
+  gap: 0 !important;
+}
+
+.quarto-post:last-child { border-bottom: 0; }
+
+.quarto-post .metadata {
+  order: -1;                       // date first, above the title
+  display: block !important;
+  flex-basis: auto !important;
+  width: auto !important;
+  max-width: none !important;
+  padding: 0 0 4px;
+  text-align: left;
+}
+
+.quarto-post .body {
+  width: 100% !important;
+  flex-basis: auto !important;
+}
+
+.quarto-post .listing-date,
+.quarto-post .listing-date a {
+  font-family: #{$font-family-sans-serif};
+  font-size: 0.735rem;
+  letter-spacing: 0.05em;
+  color: $ink-soft !important;
+  text-decoration: none !important;
+}
+
+.quarto-post .body { flex-basis: auto !important; }
+
+.quarto-post .listing-title {
+  font-family: #{$font-family-serif};
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.32;
+  margin: 0 0 5px;
+}
+
+.quarto-post .listing-title a {
+  color: $ink !important;
+  text-decoration: none !important;
+}
+
+.quarto-post .listing-title a:hover { color: $accent !important; }
+
+.quarto-post .listing-description,
+.quarto-post .listing-description a {
+  font-size: 0.99rem;
+  line-height: 1.55;
+  color: $ink-soft !important;
+  max-width: 62ch;
+  font-style: normal;
+  text-decoration: none !important;
+}
+
+.quarto-post .listing-description a:hover { color: $ink !important; }
+
+.quarto-post .thumbnail { display: none; }
+
+// Individual post pages
+.quarto-title h1.title {
+  font-family: #{$font-family-serif};
+  font-size: 1.85rem;
+  font-weight: 500;
+  letter-spacing: -0.018em;
+  line-height: 1.22;
+  margin: 0 0 10px;
+}
+
+#title-block-header {
+  padding-top: 10px;
+  margin-bottom: 34px;
+}
+
+#title-block-header .description {
+  font-size: 1.03rem;
+  color: mix($ink, $ink-soft, 55%);
+  margin: 0 0 14px;
+  max-width: 52ch;
+}
+
+#title-block-header .quarto-title-meta {
+  font-family: #{$font-family-sans-serif};
+  font-size: 0.735rem;
+  letter-spacing: 0.05em;
+  color: $ink-soft;
+  border-top: 1px solid $rule;
+  padding-top: 12px;
+}
+
+#title-block-header .quarto-title-meta-heading { display: none; }
+
+.img-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin: 1.9em 0;
+  align-items: start;
+}
+
+.img-row figure,
+.img-row p { margin: 0 !important; }
+
+.img-row img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+@media (max-width: 620px) {
+  .img-row { grid-template-columns: 1fr; }
+}
+
+// ── Code ──────────────────────────────────────────────────────────────
+// Warm the default blue-grey code surfaces so they sit on the paper ground
+div.sourceCode,
+pre.sourceCode,
+pre code,
+.cell-output pre {
+  background: #f3f0e8 !important;
+  border-radius: 2px;
+}
+
+div.sourceCode {
+  border: 1px solid $rule;
+  padding: 2px 4px;
+  margin: 1.3em 0;
+}
+
+pre.sourceCode { border: 0; }
+
+code {
+  font-size: 0.87em;
+  color: mix($ink, $accent, 55%);
+}
+
+p > code, li > code {
+  background: #f3f0e8;
+  padding: 0.1em 0.32em;
+  border-radius: 2px;
+}
+
+// Portrait image on About
+.portrait {
+  max-width: 260px;
+  border-radius: 2px;
+  margin: 0 0 30px;
+}
+
+// ── Responsive ────────────────────────────────────────────────────────
+@media (max-width: 620px) {
+  .masthead { padding-top: 58px; }
+  .masthead h1 { font-size: 1.95rem; }
+  main.content { padding: 0 22px 70px; }
+  main.content h2 { margin-top: 48px; }
+}
+
+// Print — so the page prints as a clean one-sheet profile
+@media print {
+  body { background: #fff; font-size: 9.6pt; }
+  main.content { max-width: none; padding: 0; }
+  main.content a { color: $ink; text-decoration: none; }
+
+  main.content h2 {
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 7.6pt;
+    break-after: avoid;
+  }
+
+  .cv-nav, .cv-foot { display: none; }
+  .cv-masthead { padding-top: 0; }
+  .cv-masthead h1 { font-size: 15pt; margin-bottom: 10px; }
+  .affil { margin-bottom: 16px; font-size: 9pt; }
+
+  .cv-item {
+    margin-bottom: 13px;
+    break-inside: avoid;
+  }
+
+  .cv-item .org  { font-size: 10pt; }
+  .cv-item .role { font-size: 9.3pt; }
+  .cv-item .when { font-size: 7.7pt; }
+  .cv-item p     { font-size: 9.2pt; line-height: 1.42; margin-top: 5px; }
+}

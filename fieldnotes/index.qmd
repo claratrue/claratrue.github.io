@@ -1,0 +1,33 @@
+---
+pagetitle: "Fieldnotes — Clara Thomas"
+description: "Notes from the recorders and the desk."
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, description]
+  feed: true
+---
+
+::: page-head
+# Fieldnotes
+:::
+
+::: img-row
+![A very comfy newt, Amherst, MA, August 4, 2026](images/newt.jpeg)
+
+![Big Chief 50k race, 2nd place, Tahoe, CA, June 28, 2026](images/bigchief.jpeg)
+
+![Trail run in Tuolumne, CA, June 13, 2026](images/tuolumne.jpeg)
+
+![Blainville's Horned Lizard, Tujunga, CA, June 7, 2026](images/hornedlizard.jpeg)
+
+![Checkered White, John Muir Wilderness, May 2, 2026](images/butterfly.jpeg)
+
+![Climbing Corrugation Corner at Lovers' Leap, April 4, 2026](images/corrugationcorner.jpeg)
+
+![Yellow Warbler at La Verne Bird Banding Station, August 24, 2024](images/yellowwarbler.jpeg)
+:::

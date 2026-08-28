@@ -1,0 +1,15 @@
+# Quarto build output — regenerated on every render, never commit
+/_site/
+/.quarto/
+**/*.quarto_ipynb
+/.luarc.json
+
+# Editor and OS cruft
+.DS_Store
+**/.DS_Store
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+.vscode/

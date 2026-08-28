@@ -1,0 +1,44 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Clara Thomas"
+  description: "M.S. student studying urban bird communities through passive acoustic monitoring."
+  favicon: images/logo.svg
+  open-graph: true
+  search: false
+  navbar:
+    title: "Clara T. Thomas"
+    pinned: true
+    collapse-below: sm
+    right:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+      - href: about.qmd
+        text: About
+      - href: cv.qmd
+        text: CV
+      - href: fieldnotes/index.qmd
+        text: Fieldnotes
+      
+
+format:
+  html:
+    theme: [default, theme.scss]
+    toc: false
+    anchor-sections: false
+    link-external-newwindow: true
+    link-external-icon: false
+    include-in-header:
+      - _extra/fonts.html
+
+bibliography: references.bib
+# To use a journal citation style, download a .csl file from
+# https://www.zotero.org/styles into this folder and uncomment:
+# csl: ecology.csl
+
+execute:
+  freeze: auto
