@@ -8,8 +8,9 @@ editor:
 
 :::::::::: page-head
 # Research
+
 ::: sub
-**Quantitative ecology · Conservation bioacoustics · Ornithology**
+**Quantitative Ecology · Conservation Bioacoustics · Ornithology**
 
 ## **Passive acoustic monitoring of urban bird communities.**
 :::
@@ -43,14 +44,14 @@ style="float:right; margin:5px 0 18px 28px;"}
 ::: pub
 [What can bird vocal activity tell us about urban green space? A passive
 acoustic study in California's Central Valley]{.title} [American
-Ornithological Society, Amherst, MA — August 2026 (poster)]{.cite}
+Ornithological Society, Amherst, MA — August 2026 **(poster)**]{.cite}
 :::
 
 ::: pub
 [Using automated acoustic monitoring to evaluate avian biodiversity in a
 structurally diverse urban landscape]{.title} [Animal Behavior Society,
-Baltimore, MD — July 2025 (poster) · Central Valley Birding Symposium,
-Stockton, CA — November 2025 (talk)]{.cite}
+Baltimore, MD — July 2025 **(poster)** · Central Valley Birding
+Symposium, Stockton, CA — November 2025 **(talk)**]{.cite}
 :::
 :::::
 
