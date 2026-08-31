@@ -21,11 +21,11 @@ learning-based species identification, I am estimating species richness
 and occupancy in relation to vegetation structure and urban land use.
 
 The Central Valley is one of North America’s most altered landscapes,
-having lost most of its historic wetlands, riparian forests, and
+having lost the majority of its historic wetlands, riparian forests, and
 grasslands. Those losses have contributed to widespread declines of
-habitat-specialist birds. This region also forms a large part of the
-Pacific Flyway bird migration route, so the habitat that remains is
-especially important for sustaining migratory species.
+habitat-specialist birds. Because this region forms a large part of the
+Pacific Flyway, the habitat that remains is especially important for
+migratory birds.
 
 Species distributions are rarely resolved within a single city, so my
 project is producing localized data that citywide greening initiatives
