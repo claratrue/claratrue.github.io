@@ -5,12 +5,15 @@ editor:
   markdown: 
     wrap: 72
 ---
+
 :::: page-head
 # About
 
-![](images/babywren2.JPG){width="300" style="float:right; margin:5px 0 18px 28px;"}
+![](images/babywren2.JPG){width="300"
+style="float:right; margin:5px 0 18px 28px;"}
 
-
+![](images/eaglelakebuttress.jpeg){width="300"
+style="float:right; margin:5px 0 18px 28px;"}
 
 ::: sub
 I was born and raised in Los Angeles, CA.
@@ -50,6 +53,6 @@ Biology and Applied Ecology
 
 :::: contact
 ::: contact
-c_thomas25 [at] u.pacific.edu
+c_thomas25 \[at\] u.pacific.edu
 :::
 ::::
