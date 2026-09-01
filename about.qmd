@@ -10,7 +10,7 @@ editor:
 # About
 :::
 
-::: {.sidecol}
+::: sidecol
 ![](images/babywren2.JPG){width="300"
 style="float:right; margin:5px 0 18px 28px;"}
 
@@ -47,7 +47,6 @@ Cornell University, Ithaca, NY
 B.A. in Environment & Sustainability, concentration in Evolutionary
 Biology and Applied Ecology
 :::
-::::
 
 ```{=html}
 ```
