@@ -6,14 +6,17 @@ editor:
     wrap: 72
 ---
 
-:::: page-head
+::: page-head
 # About
+:::
 
+::: {.sidecol}
 ![](images/babywren2.JPG){width="300"
 style="float:right; margin:5px 0 18px 28px;"}
 
 ![](images/eaglelakebuttress.jpeg){width="300"
 style="float:right; margin:5px 0 18px 28px;"}
+:::
 
 ::: sub
 I was born and raised in Los Angeles, CA.

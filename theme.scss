@@ -544,6 +544,28 @@ ul.projects {
   .img-row { grid-template-columns: 1fr; }
 }
 
+// Image stacking-----------------------------------------------
+
+.sidecol {
+  float: right;
+  width: 300px;
+  margin: 5px 0 18px 28px;
+}
+
+.sidecol p { margin: 0 !important; }
+
+.sidecol img {
+  width: 100%;
+  display: block;
+  margin-bottom: 14px;
+}
+
+.sidecol img:last-child { margin-bottom: 0; }
+
+@media (max-width: 620px) {
+  .sidecol { float: none; width: 100%; margin: 1.6em 0; }
+}
+
 // ── Code ──────────────────────────────────────────────────────────────
 // Warm the default blue-grey code surfaces so they sit on the paper ground
 div.sourceCode,
