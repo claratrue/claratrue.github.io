@@ -15,21 +15,21 @@ editor:
 ## **Passive acoustic monitoring of urban bird communities.**
 :::
 
-I study how bird communities respond to urban development across
-Stockton, California. Using passive acoustic monitoring and machine
-learning-based species identification, I am estimating species richness
-and occupancy in relation to vegetation structure and urban land use.
+I currently study how bird communities respond to development across an
+urban gradient in Stockton, a city in California’s Central Valley. Using
+passive acoustic monitoring and automated species identification, I am
+modeling how occupancy and relative abundance vary with vegetation
+structure.
 
-The Central Valley is one of North America’s most altered landscapes,
-having lost the majority of its historic wetlands, riparian forests, and
-grasslands. Those losses have contributed to widespread declines of
-habitat-specialist birds. Because this region forms a large part of the
-Pacific Flyway, the habitat that remains is especially important for
-migratory birds.
+The Valley has lost more than 90% of its historic wetlands, riparian
+forests, and grasslands. Habitat-specialist birds have declined with
+them. Because this region forms a large part of the Pacific Flyway,
+remaining riparian corridors and urban vegetation provide important
+stopover habitat for migrants.
 
-Species distributions are rarely resolved within a single city, so my
-project is producing localized data that citywide greening initiatives
-can act on.
+Intra-urban acoustic monitoring has not been widely applied in the
+Central Valley, and so this project provides localized data for
+conservation and urban greening initiatives.
 
 ## Presentations
 
