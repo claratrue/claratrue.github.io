@@ -188,10 +188,10 @@ storage]{.role} [January — November 2022]{.when}
 ::: cv-item
 [Software]{.org}
 
-R, Python, ArcGIS, Survey123, Microsoft Office Suite.
+R, Python, ArcGIS, Git, Microsoft Office Suite.
 :::
 ::::
 
 ::: cv-foot
-Last updated August 2026 · [Download as PDF](cv.pdf)
+Last updated September 2026 · [Download as PDF](cv.pdf)
 :::
