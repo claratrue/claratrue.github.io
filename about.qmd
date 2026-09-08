@@ -11,7 +11,7 @@ editor:
 :::
 
 ::: sidecol
-![](images/babywren2.JPG){width="300"
+![](images/babywren.JPG){width="300"
 style="float:right; margin:5px 0 18px 28px;"}
 
 ![](images/eaglelakebuttress.jpeg){width="300"
