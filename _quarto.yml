@@ -5,7 +5,7 @@ project:
 website:
   title: "Clara Thomas"
   description: "M.S. student studying urban bird communities through passive acoustic monitoring."
-  favicon: images/logo.svg
+  favicon: images/logo4.svg
   open-graph: true
   search: false
   navbar:
